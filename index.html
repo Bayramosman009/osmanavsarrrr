@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Yönlendirme Gerekli</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding: 50px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .warning {
+      font-size: 18px;
+      color: red;
+      margin-bottom: 20px;
+    }
+    .instructions {
+      font-size: 16px;
+      color: #333;
+}
+    .note {
+      font-size: 14px;
+      color: gray;
+      margin-top: 20px;
+    }
+  </style>
+  <script>
+    // Harici tarayıcıda kontrol et
+    function checkBrowser() {
+      // Eğer kullanıcı harici tarayıcıya geçmişse yönlendirme yapılır
+      if (navigator.userAgent.indexOf(“TikTok”) === -1) {
+        window.location.href = “https://edrpmrg.romance-matches-paradise.com/pmt2c60?t=X”; // Yönlendirme yapılacak link
+      }
+    }
 
+    // Sayfa yüklendiğinde kontrol et
+    window.onload = checkBrowser;
+  </script>
+</head>
+<body>
+  <div class=“container”>
+    <p class=“warning”>Bu sayfa uygulama içi tarayıcıda açılmaz!</p>
+    <p class=“instructions”>Lütfen sağ üst köşeden menüyü açarak “Harici tarayıcıda aç” seçeneğini kullanın.</p>
+    <p class=“note”>Harici tarayıcıda otomatik olarak yönlendirileceksiniz.</p>
+  </div>
+</body>
+</html>
